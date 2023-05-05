@@ -5,6 +5,7 @@ import navIcon1 from '../assets/img/linkedbranco.png';
 import navIcon2 from '../assets/img/git icon.png';
 import navIcon3 from '../assets/img/twitter branco.png';
 import { HashLink } from 'react-router-hash-link';
+import { Redirect } from 'react-router-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 export const NavBar = () => {
