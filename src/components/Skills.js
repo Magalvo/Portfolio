@@ -1,6 +1,7 @@
-import meter1 from '../assets/img/50meter.png';
-import meter2 from '../assets/img/60meter.png';
-import meter3 from '../assets/img/70meter.png';
+import meter1 from '../assets/img/webdevround.png';
+import meter2 from '../assets/img/uxui rounded.png';
+import meter3 from '../assets/img/networks.png';
+import meter4 from '../assets/img/graphical.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from '../assets/img/arrow1.svg';
@@ -43,19 +44,19 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter1} alt="WebDev" />
                   <h5>Web Development</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter2} alt="UX/UI" />
                   <h5>UX/UI</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
+                  <img src={meter3} alt="Networking" />
                   <h5>Networking</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter4} alt="Graphical Design" />
                   <h5>Graphical Design</h5>
                 </div>
               </Carousel>
