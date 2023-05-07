@@ -80,7 +80,15 @@ export const Banner = () => {
                     and diferent ways to solve my problems.
                   </p>
                   <button onClick={() => console.log('connect')}>
-                    Let’s Connect <ArrowRightCircle size={25} />
+                    Let’s Connect{' '}
+                    <a
+                      href="https://www.linkedin.com/in/diogomagalhaescalvo/"
+                      target="_blank"
+                      rel="noreferrer"
+                      style={{ color: 'white' }}
+                    >
+                      <ArrowRightCircle size={25} />
+                    </a>
                   </button>
                 </div>
               )}
