@@ -60,6 +60,13 @@ export const Skills = () => {
                   <h5>Graphical Design</h5>
                 </div>
               </Carousel>
+              <div className="otherskills">
+                <h5>JavaScript ES6</h5>
+                <h5>MongoDB</h5> <h5>Express.js</h5>
+                <h5>React.js</h5>
+                <h5>Node.js</h5> <h5>Linux</h5> <h5>Git</h5>{' '}
+                <h5>Virtualization</h5> <h5>DOM</h5>
+              </div>
             </div>
           </div>
         </div>

@@ -25,12 +25,12 @@ export const AboutMe = () => {
                       <h2 className="about-me-title">About Me</h2>
                       <p>
                         Hello and welcome to my portfolio! My name is Diogo and
-                        I am a junior full-stack developer with a passion for
-                        building engaging and intuitive web applications. I am a
-                        recent graduate of a 6-month web development bootcamp at
-                        Ironhack, where I learned to build MERN stack
-                        applications and honed my skills in both front-end and
-                        back-end development. Before pursuing my passion for
+                        I am a junior full-stack web developer with a passion
+                        for building engaging and intuitive web applications. I
+                        am a recent graduate of a 6-month web development
+                        bootcamp at Ironhack, where I learned to build MERN
+                        stack applications and honed my skills in both front-end
+                        and back-end development. Before pursuing my passion for
                         tech, I spent several years working in retail, which
                         taught me valuable skills in communication,
                         organization, and customer service. These skills have

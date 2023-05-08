@@ -17,7 +17,7 @@ export const Projects = () => {
     },
     {
       title: 'Megatech',
-      description: 'Apple Repair Company',
+      description: 'Smartphone Repair Company',
       imgUrl: projImg2,
       link: 'https://megatech.pt/'
     },
@@ -62,7 +62,7 @@ export const Projects = () => {
                   }
                 >
                   <h2>Projects</h2>
-                  <p>Here you can cee some of my projects</p>
+                  <p>Here you can see some of my projects</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
                       variant="pills"
@@ -93,10 +93,18 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>COMMING SOON</p>
+                        <Row>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>COMMING SOON</p>
+                        <Row>
+                          {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
