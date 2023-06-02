@@ -10,6 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/', router);
+app.listen(5000, () => console.log('Server started on port 5000'));
 /* app.use(
   cors({
     origin: 'https://magalvo.onrender.com'
@@ -41,7 +42,7 @@ transporter.verify(error => {
 
 console.log(process.env.EMAIL_ADDRESS);
 
-app.post('/contact', (req, res) => {
+router.post('/contact', async (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
@@ -76,13 +77,3 @@ app.post('/contact', (req, res) => {
     }
   });
 });
-
-const startServer = async () => {
-  try {
-    app.listen(5000, () => console.log('Server started on port 5000'));
-  } catch (error) {
-    console.log(error);
-  }
-};
-
-startServer();
