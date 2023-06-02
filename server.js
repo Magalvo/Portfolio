@@ -8,6 +8,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/', router);
+app.use(
+  cors({
+    origin: 'http://localhost:3000'
+  })
+);
 
 let transporter = nodemailer.createTransport({
   host: 'smtp.hostinger.com',
@@ -62,5 +67,5 @@ app.post('/contact', (req, res) => {
     }
   });
 });
-
+console.log('Working!');
 app.listen(5000, () => console.log('Server Running on port 5000'));
