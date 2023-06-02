@@ -2,25 +2,24 @@ const express = require('express');
 const router = express.Router();
 const cors = require('cors');
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 
-// server used to send emails
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/', router);
-app.listen(5000, () => console.log('Server Running'));
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASS);
 
-const contactEmail = nodemailer.createTransport({
-  service: 'gmail',
+let transporter = nodemailer.createTransport({
+  host: 'smtp.hostinger.com',
+  port: 465,
+  secure: true,
   auth: {
-    user: '********@gmail.com',
-    pass: ''
+    user: process.env.EMAIL_ADDRESS,
+    pass: process.env.EMAIL_PASSWORD
   }
 });
 
-contactEmail.verify(error => {
+transporter.verify(error => {
   if (error) {
     console.log(error);
   } else {
@@ -28,21 +27,34 @@ contactEmail.verify(error => {
   }
 });
 
-router.post('/contact', (req, res) => {
+app.post('/contact', (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
   const phone = req.body.phone;
+
   const mail = {
-    from: name,
-    to: '********@gmail.com',
+    from: process.env.EMAIL_ADDRESS,
+    to: process.env.EMAIL_ADDRESS,
     subject: 'Contact Form Submission - Portfolio',
-    html: `<p>Name: ${name}</p>
+    html: `<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>New Contact Form Submission!</title>
+    </head>
+    <body>
+      
+           <p>Name: ${name}</p>
            <p>Email: ${email}</p>
            <p>Phone: ${phone}</p>
-           <p>Message: ${message}</p>`
+           <p>Message: ${message}</p>
+    
+    </body>
+    </html>`
   };
-  contactEmail.sendMail(mail, error => {
+
+  transporter.sendMail(mail, error => {
     if (error) {
       res.json(error);
     } else {
@@ -50,3 +62,5 @@ router.post('/contact', (req, res) => {
     }
   });
 });
+
+app.listen(5000, () => console.log('Server Running on port 5000'));

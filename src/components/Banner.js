@@ -69,7 +69,7 @@ export const Banner = () => {
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
-                      data-rotate='[ "Web Developer", "Web Designer", "No-coder" ]'
+                      data-rotate='[ "Web Developer", "Web Designer", "Network Administartor" ]'
                     >
                       <span className="wrap">{text}</span>
                     </span>

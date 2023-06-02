@@ -3,6 +3,9 @@ import { ProjectCard } from './ProjectCard';
 import projImg1 from '../assets/img/Verse Fight.png';
 import projImg2 from '../assets/img/megatech.png';
 import projImg3 from '../assets/img/espfoto.png';
+import projImg4 from '../assets/img/GetInAtlas Today.png';
+import projImg5 from '../assets/img/Handlebars.png';
+import projImg6 from '../assets/img/Pic4Paws.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -16,10 +19,10 @@ export const Projects = () => {
       link: 'https://verse-fight.netlify.app/'
     },
     {
-      title: 'Megatech',
-      description: 'Smartphone Repair Company',
-      imgUrl: projImg2,
-      link: 'https://megatech.pt/'
+      title: 'Spread Tax',
+      description: 'Accounting Platform for Accountants & Companies',
+      imgUrl: projImg5,
+      link: 'https://busy-pear-catfish-sari.cyclic.app/'
     },
     {
       title: 'ESPPortal',
@@ -29,10 +32,10 @@ export const Projects = () => {
       link: 'https://github.com/Magalvo/ESPBug'
     },
     {
-      title: 'Verse Fight',
-      description: 'Canvas HTML Game',
-      imgUrl: projImg1,
-      link: 'https://verse-fight.netlify.app/'
+      title: 'Get In Atlas',
+      description: 'A social network for travel enthusiasts.',
+      imgUrl: projImg4,
+      link: 'https://getinatlas.com'
     },
     {
       title: 'Megatech',
@@ -41,11 +44,11 @@ export const Projects = () => {
       link: 'https://megatech.pt/'
     },
     {
-      title: 'ESPortal',
+      title: 'Pic 4 Paws',
       description:
-        'An ESP8266 Arduino project to draw attention to the many dangers of the internet',
-      imgUrl: projImg3,
-      link: 'https://github.com/Magalvo/ESPBug'
+        'A non-profit organization that boosts the adoption of sheltered animals',
+      imgUrl: projImg6,
+      link: 'https://pic4paws.com'
     }
   ];
 

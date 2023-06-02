@@ -4,8 +4,6 @@ import meter3 from '../assets/img/networks.png';
 import meter4 from '../assets/img/graphical.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from '../assets/img/arrow1.svg';
-import arrow2 from '../assets/img/arrow2.svg';
 import colorSharp from '../assets/img/color-sharp.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 
@@ -42,6 +40,8 @@ export const Skills = () => {
                 responsive={responsive}
                 infinite={true}
                 className="owl-carousel owl-theme skill-slider"
+                autoPlay={true}
+                autoPlaySpeed={3000} // Change the delay between transitions
               >
                 <div className="item">
                   <img src={meter1} alt="WebDev" />
