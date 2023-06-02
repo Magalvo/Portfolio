@@ -27,7 +27,7 @@ export const Contact = () => {
     e.preventDefault();
     try {
       setButtonText('Sending...');
-      let response = await fetch('https://magalvo.onrender.com/contact', {
+      let response = await fetch('http://localhost:5000/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8'

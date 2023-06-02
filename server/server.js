@@ -1,18 +1,25 @@
-const express = require('express');
+import express from 'express';
+import * as dotenv from 'dotenv';
+import cors from 'cors';
+import nodemailer from 'nodemailer';
 const router = express.Router();
-const cors = require('cors');
-const nodemailer = require('nodemailer');
-require('dotenv').config();
+
+dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/', router);
-app.use(
+/* app.use(
   cors({
     origin: 'https://magalvo.onrender.com'
   })
 );
+ */
+
+app.get('/', async (req, res) => {
+  res.send('Backend Is On The Go!');
+});
 
 let transporter = nodemailer.createTransport({
   host: 'smtp.hostinger.com',
@@ -31,6 +38,8 @@ transporter.verify(error => {
     console.log('Ready to Send');
   }
 });
+
+console.log(process.env.EMAIL_ADDRESS);
 
 app.post('/contact', (req, res) => {
   const name = req.body.firstName + req.body.lastName;
