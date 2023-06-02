@@ -14,6 +14,12 @@ app.use(
   })
 );
 
+app.get('/', async (req, res) => {
+  res.status(200).json({
+    message: 'Hello from DALL.E!'
+  });
+});
+
 let transporter = nodemailer.createTransport({
   host: 'smtp.hostinger.com',
   port: 465,
@@ -67,4 +73,12 @@ app.post('/contact', (req, res) => {
     }
   });
 });
-console.log('Working!');
+const startServer = async () => {
+  try {
+    app.listen(5000, () => console.log('Server started on port 5000'));
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+startServer();
