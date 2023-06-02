@@ -10,15 +10,9 @@ app.use(express.json());
 app.use('/', router);
 app.use(
   cors({
-    origin: 'http://localhost:3000'
+    origin: 'https://magalvo.onrender.com'
   })
 );
-
-app.get('/', async (req, res) => {
-  res.status(200).json({
-    message: 'Hello from DALL.E!'
-  });
-});
 
 let transporter = nodemailer.createTransport({
   host: 'smtp.hostinger.com',
@@ -73,6 +67,7 @@ app.post('/contact', (req, res) => {
     }
   });
 });
+
 const startServer = async () => {
   try {
     app.listen(5000, () => console.log('Server started on port 5000'));
