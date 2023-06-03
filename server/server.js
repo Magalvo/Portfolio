@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/', router);
-app.listen(8080, () => console.log('Server started on port 8080'));
+
 /* app.use(
   cors({
     origin: 'https://magalvo.onrender.com'
@@ -18,7 +18,7 @@ app.listen(8080, () => console.log('Server started on port 8080'));
 );
  */
 
-router.get('/', async (req, res) => {
+app.get('/', async (req, res) => {
   res.send('Backend Is On The Go!');
 });
 
@@ -77,3 +77,9 @@ router.post('/contact', async (req, res) => {
     }
   });
 });
+
+const startServer = async () => {
+  app.listen(8080, () => console.log('Server started on port 8080'));
+};
+
+startServer();
