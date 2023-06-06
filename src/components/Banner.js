@@ -4,6 +4,8 @@ import headerImg from '../assets/img/editadoVirado.png';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import animationData from '../assets/img/PortBack.json';
+import Lottie from 'lottie-react';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -13,6 +15,14 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = ['Web Developer', 'Web Designer'];
   const period = 2000;
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -54,6 +64,25 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
+        <div
+          className="animation-container"
+          style={{
+            position: 'absolute',
+            left: '0',
+            top: '0',
+            width: '100vw',
+            height: '100%',
+            zIndex: '0'
+          }}
+        >
+          <Lottie
+            options={defaultOptions}
+            animationData={animationData}
+            height={600}
+            width={600}
+          />
+        </div>
+
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>

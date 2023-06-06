@@ -555,8 +555,10 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 .contact form button:hover {
   color: #fff;
+  border-radius: 60px;
 }
 .contact form button::before {
+  border-radius: 60px;
   content: '';
   background: #121212;
   width: 0;
@@ -569,6 +571,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+  border-radius: 60px;
 }
 
 /************ Footer Css ************/

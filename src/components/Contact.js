@@ -29,7 +29,6 @@ export const Contact = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      setButtonText('Sending...');
       emailjs
         .sendForm(
           'service_elv1wz3',
@@ -39,6 +38,7 @@ export const Contact = () => {
         )
         .then(
           result => {
+            setButtonText('Send');
             console.log(result.text);
             showAlert('success', 'Message sent successfully');
             setFormDetails(formInitialDetails);
@@ -52,7 +52,7 @@ export const Contact = () => {
           }
         );
 
-      setButtonText('Send');
+      setButtonText('Sending...');
     } catch (e) {
       console.log(e);
     }
