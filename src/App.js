@@ -8,12 +8,17 @@ import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { AboutMe } from './components/AboutMe';
+import StarsCanvas from './components/canvas/Stars';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <NavBar />
-      <Banner />
+      <div style={{ position: 'relative', zIndex: '-1' }}>
+        <Banner />
+        <StarsCanvas />
+      </div>
+
       <AboutMe />
       <Skills />
       <Projects />

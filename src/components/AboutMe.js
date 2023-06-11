@@ -6,7 +6,7 @@ import TrackVisibility from 'react-on-screen';
 
 export const AboutMe = () => {
   return (
-    <section className="about-me" id="about">
+    <section className='about-me' id='about'>
       <Container>
         <Row>
           <Col size={12}>
@@ -17,12 +17,12 @@ export const AboutMe = () => {
                     isVisible ? 'animate__animated animate__fadeIn' : ''
                   }
                 >
-                  <div className="about-me-image">
-                    <img src={myImage} alt="Diogo Santos" />
+                  <div className='about-me-image'>
+                    <img src={myImage} alt='Diogo Santos' />
                   </div>
-                  <div className="container">
-                    <div className="about-me-text">
-                      <h2 className="about-me-title">About Me</h2>
+                  <div className='container'>
+                    <div className='about-me-text'>
+                      <h2 className='about-me-title'>About Me</h2>
                       <p>
                         Welcome to my portfolio! I'm Diogo, a junior full-stack
                         web developer with a passion for building engaging and

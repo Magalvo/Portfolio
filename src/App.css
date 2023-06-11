@@ -22,6 +22,11 @@
   box-sizing: border-box;
 }
 
+.App {
+  position: relative;
+  z-index: 0;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
@@ -714,4 +719,15 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 .contact {
   padding-top: 100px;
+}
+
+.stars {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 }
