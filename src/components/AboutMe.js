@@ -1,4 +1,5 @@
 import myImage from '../assets/img/profile.jpeg';
+import astronaut from '../assets/img/AstroLadoEdit.png';
 
 import { Container, Row, Col } from 'react-bootstrap';
 import 'animate.css';
@@ -8,8 +9,11 @@ export const AboutMe = () => {
   return (
     <section className='about-me' id='about'>
       <Container>
+        <div className='astronaut-container'>
+          <img className='astronaut-image' src={astronaut} alt='astronaut' />
+        </div>
         <Row>
-          <Col size={12}>
+          <Col>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
