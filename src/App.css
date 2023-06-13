@@ -731,3 +731,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   left: 0;
   z-index: 0;
 }
+
+.astronaut-container {
+  position: absolute;
+  margin: 40vh auto;
+  left: -10vh;
+  width: 20%;
+  height: auto;
+}

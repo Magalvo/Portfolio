@@ -62,10 +62,10 @@ export const Banner = () => {
   };
 
   return (
-    <section className="banner" id="home">
+    <section className='banner' id='home'>
       <Container>
         <div
-          className="animation-container"
+          className='animation-container'
           style={{
             position: 'absolute',
             left: '0',
@@ -83,8 +83,8 @@ export const Banner = () => {
           />
         </div>
 
-        <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7}>
+        <Row className='align-items-center'>
+          <Col xs={12} md={6} xl={7} style={{ zIndex: '1' }}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -92,15 +92,15 @@ export const Banner = () => {
                     isVisible ? 'animate__animated animate__fadeIn' : ''
                   }
                 >
-                  <span className="tagline">Welcome to My Portfolio</span>
+                  <span className='tagline'>Welcome to My Portfolio</span>
                   <h1>
                     {`Hi! I'm Diogo`}{' '}
                     <span
-                      className="txt-rotate"
-                      dataPeriod="1000"
+                      className='txt-rotate'
+                      dataPeriod='1000'
                       data-rotate='[ "Web Developer", "Web Designer", "Network Administartor" ]'
                     >
-                      <span className="wrap">{text}</span>
+                      <span className='wrap'>{text}</span>
                     </span>
                   </h1>
                   <p>
@@ -108,12 +108,15 @@ export const Banner = () => {
                     Developer with an enourmus eager to learn new technologies
                     and diferent ways to solve my problems.
                   </p>
-                  <button onClick={() => console.log('connect')}>
+                  <button
+                    onClick={() => console.log('connect')}
+                    style={{ zIndex: '9' }}
+                  >
                     Let’s Connect{' '}
                     <a
-                      href="https://www.linkedin.com/in/diogomagalhaescalvo/"
-                      target="_blank"
-                      rel="noreferrer"
+                      href='https://www.linkedin.com/in/diogomagalhaescalvo/'
+                      target='_blank'
+                      rel='noopener noreferrer'
                       style={{ color: 'white' }}
                     >
                       <ArrowRightCircle size={25} />
@@ -131,7 +134,7 @@ export const Banner = () => {
                     isVisible ? 'animate__animated animate__zoomIn' : ''
                   }
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={headerImg} alt='Header Img' />
                 </div>
               )}
             </TrackVisibility>

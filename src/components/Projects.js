@@ -53,10 +53,10 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="projects">
+    <section className='project' id='projects'>
       <Container>
         <Row>
-          <Col size={12}>
+          <Col size={12} style={{ zIndex: '1' }}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -66,43 +66,43 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>Here you can see some of my projects</p>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                  <Tab.Container id='projects-tabs' defaultActiveKey='first'>
                     <Nav
-                      variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
-                      id="pills-tab"
+                      variant='pills'
+                      className='nav-pills mb-5 justify-content-center align-items-center'
+                      id='pills-tab'
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Projects</Nav.Link>
+                        <Nav.Link eventKey='first'>Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Projects</Nav.Link>
+                        <Nav.Link eventKey='second'>Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Projects</Nav.Link>
+                        <Nav.Link eventKey='third'>Projects</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
-                      id="slideInUp"
+                      id='slideInUp'
                       className={
                         isVisible ? 'animate__animated animate__slideInUp' : ''
                       }
                     >
-                      <Tab.Pane eventKey="first">
+                      <Tab.Pane eventKey='first'>
                         <Row>
                           {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="second">
+                      <Tab.Pane eventKey='second'>
                         <Row>
                           {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="third">
+                      <Tab.Pane eventKey='third'>
                         <Row>
                           {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
@@ -118,9 +118,9 @@ export const Projects = () => {
         </Row>
       </Container>
       <img
-        className="background-image-right"
+        className='background-image-right'
         src={colorSharp2}
-        alt="right-light"
+        alt='right-light'
       ></img>
     </section>
   );

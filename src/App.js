@@ -14,14 +14,22 @@ function App() {
   return (
     <div className='App'>
       <NavBar />
-      <div style={{ position: 'relative', zIndex: '-1' }}>
+      <div style={{ position: 'relative', zIndex: '0' }}>
         <Banner />
         <StarsCanvas />
       </div>
 
       <AboutMe />
       <Skills />
-      <Projects />
+      <div style={{ position: 'relative', zIndex: '0' }}>
+        <Projects />
+
+        <StarsCanvas />
+        {/* <div style={{ zIndex: '-2' }}>
+          
+        </div> */}
+      </div>
+
       <Contact />
       <Footer />
     </div>
