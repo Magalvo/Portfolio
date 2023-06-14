@@ -27,28 +27,25 @@ export const AboutMe = () => {
                     <img src={myImage} alt='Diogo Santos' />
                   </div>
                   <Experience />
+
+                  <img
+                    className='background-image-center-left'
+                    src={colorSharp}
+                    alt='right-light'
+                  />
+                  <img
+                    className='background-image-center-right'
+                    src={colorSharp2}
+                    alt='right-light'
+                  />
                 </div>
               )}
             </TrackVisibility>
           </Col>
-          <img
-            className='background-image-center-left'
-            src={colorSharp}
-            alt='right-light'
-          />
-          <img
-            className='background-image-center-right'
-            src={colorSharp2}
-            alt='right-light'
-          />
+
           <Tech />
         </Row>{' '}
       </Container>
-      {/*  <img
-        className='background-image-center'
-        src={colorSharp}
-        alt='right-light'
-      /> */}
     </section>
   );
 };

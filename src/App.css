@@ -359,10 +359,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 .background-image-left {
-  top: 28%;
+  top: 0;
   position: absolute;
   bottom: 0;
   width: 100%;
+  left: 0;
   z-index: -4;
 }
 .react-multiple-carousel__arrow {
@@ -500,26 +501,31 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .background-image-center {
-  top: -70%;
+  top: 0;
   position: absolute;
-  bottom: auto; /* Set bottom to 'auto' to allow 'top' property to take effect */
   width: 100%;
-  left: 0;
+  height: 100%;
   z-index: -1;
   opacity: 0.6;
 }
 
 .background-image-center-left {
-  top: 15%; /* Adjust this value to lower the position */
   position: absolute;
-  bottom: auto; /* Set bottom to 'auto' to allow 'top' property to take effect */
+  top: 0;
+  left: 0;
   width: 100%;
-  right: 0;
+  height: 100%;
   z-index: -1;
 }
 
+/* @media (min-width: 768px) {
+  .background-image-center-left {
+    top: -45%;
+  }
+}
+ */
 .background-image-center-right {
-  top: 30%; /* Adjust this value to lower the position */
+  top: 0; /* Adjust this value to lower the position */
   position: absolute;
   bottom: auto; /* Set bottom to 'auto' to allow 'top' property to take effect */
   width: 100%;
