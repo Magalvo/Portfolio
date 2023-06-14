@@ -9,6 +9,8 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
 import { experiences } from '../constants/index';
+import colorSharp from '../assets/img/color-sharp.png';
+
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{ background: '#1d1836', color: '#fff' }}

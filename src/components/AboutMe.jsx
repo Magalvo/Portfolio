@@ -1,5 +1,9 @@
 import myImage from '../assets/img/profile.jpeg';
 import astronaut from '../assets/img/AstroLadoEdit.png';
+import colorSharp from '../assets/img/color-sharp.png';
+import colorSharp2 from '../assets/img/color-sharp2.png';
+import Tech from './Tech';
+
 import Experience from './Experience';
 
 import { Container, Row, Col } from 'react-bootstrap';
@@ -27,8 +31,24 @@ export const AboutMe = () => {
               )}
             </TrackVisibility>
           </Col>
-        </Row>
+          <img
+            className='background-image-center-left'
+            src={colorSharp}
+            alt='right-light'
+          />
+          <img
+            className='background-image-center-right'
+            src={colorSharp2}
+            alt='right-light'
+          />
+          <Tech />
+        </Row>{' '}
       </Container>
+      {/*  <img
+        className='background-image-center'
+        src={colorSharp}
+        alt='right-light'
+      /> */}
     </section>
   );
 };

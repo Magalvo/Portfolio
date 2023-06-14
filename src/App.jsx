@@ -9,25 +9,27 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { AboutMe } from './components/AboutMe';
 import StarsCanvas from './components/canvas/Stars';
+import Tech from './components/Tech';
 
 function App() {
   return (
     <div className='App'>
       <NavBar />
+
       <div style={{ position: 'relative', zIndex: '0' }}>
         <Banner />
         <StarsCanvas />
       </div>
 
-      <AboutMe />
+      <div style={{ position: 'relative', zIndex: '0' }}>
+        <AboutMe />
+      </div>
+
       <Skills />
+
       <div style={{ position: 'relative', zIndex: '0' }}>
         <Projects />
-
         <StarsCanvas />
-        {/* <div style={{ zIndex: '-2' }}>
-          
-        </div> */}
       </div>
 
       <Contact />

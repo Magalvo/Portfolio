@@ -9,6 +9,7 @@ import projImg6 from '../assets/img/Pic4Paws.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import colorSharp from '../assets/img/color-sharp.png';
 
 export const Projects = () => {
   const projects = [
@@ -57,6 +58,17 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col size={12} style={{ zIndex: '1' }}>
+            <img
+              className='background-image-center'
+              src={colorSharp2}
+              alt='right-light'
+            />
+            <img
+              className='background-image-center'
+              src={colorSharp}
+              alt='right-light'
+              style={{ right: '0' }}
+            />
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -117,11 +129,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img
-        className='background-image-right'
-        src={colorSharp2}
-        alt='right-light'
-      ></img>
     </section>
   );
 };

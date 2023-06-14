@@ -2,6 +2,17 @@ import bigbang from '../assets/icons/bigbang.png';
 import book from '../assets/icons/book.png';
 import future from '../assets/icons/future.png';
 import evolution from '../assets/icons/evolution.png';
+import css from '../assets/tech/css.png';
+import figma from '../assets/tech/figma.png';
+import git from '../assets/tech/git.png';
+import html from '../assets/tech/html.png';
+import javascript from '../assets/tech/javascript.png';
+import mongodb from '../assets/tech/mongodb.png';
+import nodejs from '../assets/tech/nodejs.png';
+import reactjs from '../assets/tech/reactjs.png';
+import tailwind from '../assets/tech/tailwind.png';
+import threejs from '../assets/tech/threejs.svg';
+
 const experiences = [
   {
     title: 'From the beginning of Time...',
@@ -57,4 +68,49 @@ const experiences = [
   }
 ];
 
-export { experiences };
+const technologies = [
+  {
+    name: 'HTML 5',
+    icon: html
+  },
+  {
+    name: 'CSS 3',
+    icon: css
+  },
+  {
+    name: 'JavaScript',
+    icon: javascript
+  },
+
+  {
+    name: 'React JS',
+    icon: reactjs
+  },
+
+  {
+    name: 'Tailwind CSS',
+    icon: tailwind
+  },
+  {
+    name: 'Node JS',
+    icon: nodejs
+  },
+  {
+    name: 'MongoDB',
+    icon: mongodb
+  },
+  {
+    name: 'Three JS',
+    icon: threejs
+  },
+  {
+    name: 'git',
+    icon: git
+  },
+  {
+    name: 'figma',
+    icon: figma
+  }
+];
+
+export { experiences, technologies };

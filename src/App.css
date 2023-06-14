@@ -362,7 +362,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   top: 28%;
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 100%;
   z-index: -4;
 }
 .react-multiple-carousel__arrow {
@@ -494,9 +494,37 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   top: 0;
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 100%;
   right: 0;
   z-index: -4;
+}
+
+.background-image-center {
+  top: -70%;
+  position: absolute;
+  bottom: auto; /* Set bottom to 'auto' to allow 'top' property to take effect */
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.background-image-center-left {
+  top: 15%; /* Adjust this value to lower the position */
+  position: absolute;
+  bottom: auto; /* Set bottom to 'auto' to allow 'top' property to take effect */
+  width: 100%;
+  right: 0;
+  z-index: -1;
+}
+
+.background-image-center-right {
+  top: 30%; /* Adjust this value to lower the position */
+  position: absolute;
+  bottom: auto; /* Set bottom to 'auto' to allow 'top' property to take effect */
+  width: 100%;
+  left: 0;
+  z-index: -1;
 }
 
 /************ Projects Css ************/
@@ -855,4 +883,15 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   font-size: 14px;
   padding-left: 0.25rem;
   letter-spacing: 0.05em;
+}
+
+.canvas-loader {
+  font-size: 10px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.1s infinite ease;
+  transform: translateZ(0);
 }
