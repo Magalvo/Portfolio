@@ -44,11 +44,6 @@ export const AboutMe = () => {
           <Tech />
         </Row>{' '}
       </Container>
-      {/*  <img
-        className='background-image-center'
-        src={colorSharp}
-        alt='right-light'
-      /> */}
     </section>
   );
 };

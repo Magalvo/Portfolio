@@ -37,7 +37,7 @@ const experiences = [
       'Learnt everything that I could from different sources and how to look for information about it',
       'Recently graduated from a web development boot camp at Ironhack and a Network Administration Course at ITA',
       'Currently in college taking software development.',
-      'Expertise in JavaScript, React, Node.js, MongoDB, Git, Virtualization and Networking'
+      'Expertise in JavaScript, React, Node.js, MongoDB, Git, VMs, Networking & Linux'
     ]
   },
   {
@@ -50,7 +50,7 @@ const experiences = [
       'Strong foundation in both front-end and back-end development with real world projects',
       'Pair-Programing Skills and the ability and the eager to learn from others. [Never be the Smartest Person in the room]',
       'Retail experience provided valuable skills in communication, organization, and customer service.',
-      'Able to build user-friendly applications that meet client and end-user needs.'
+      'Able to build user-friendly applications that meet client and end-user needs, having 2+ years of experience with no-code programing [Wordpress]'
     ]
   },
   {
@@ -111,6 +111,14 @@ const technologies = [
     name: 'figma',
     icon: figma
   }
+  /*   {
+    name: 'Linux',
+    icon: linux
+  },
+  {
+    name: 'VM',
+    icon: vms
+  } */
 ];
 
 export { experiences, technologies };

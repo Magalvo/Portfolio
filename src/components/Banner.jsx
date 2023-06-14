@@ -104,9 +104,9 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p>
-                    Hello and welcome, I'm an ambitious Junior Full Stack Web
-                    Developer with an enourmus eager to learn new technologies
-                    and diferent ways to solve my problems.
+                    Hello and welcome, I'm an ambitious Full Stack Web Developer
+                    with an enourmus eager to learn new technologies and
+                    diferent ways to solve my problems.
                   </p>
                   <button
                     onClick={() => console.log('connect')}

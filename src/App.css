@@ -500,7 +500,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .background-image-center {
-  top: -70%;
+  top: -50%;
   position: absolute;
   bottom: auto; /* Set bottom to 'auto' to allow 'top' property to take effect */
   width: 100%;
@@ -510,10 +510,11 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 .background-image-center-left {
-  top: 15%; /* Adjust this value to lower the position */
+  top: -30%; /* Adjust this value to lower the position */
   position: absolute;
   bottom: auto; /* Set bottom to 'auto' to allow 'top' property to take effect */
   width: 100%;
+  height: 100%;
   right: 0;
   z-index: -1;
 }
