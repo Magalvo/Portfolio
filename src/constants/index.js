@@ -4,16 +4,16 @@ import future from '../assets/icons/future.png';
 import evolution from '../assets/icons/evolution.png';
 const experiences = [
   {
-    title: 'From the begining of Time...',
+    title: 'From the beginning of Time...',
     company_name: 'Curiosity',
     icon: bigbang,
     iconBg: '#383E56',
     date: 'August 2000',
     points: [
       "I've always been curious about how everything worked around me",
-      'Started dismanteling my consoles and eletronics to see how the magic happened',
-      'Self-Thaught myself how to repair hardware devices (Phones/Consoles/Computers)',
-      'I love everything about space and the vasteness of his uncertanty'
+      'Started dismantling my consoles and electronics to see how the magic happened',
+      'Self-taught myself how to repair hardware devices (Phones/Consoles/Computers)',
+      'I love everything about space and the vastness of his uncertainty'
     ]
   },
   {
@@ -23,9 +23,9 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: 'Present',
     points: [
-      'Learnt everything that I could from diferent sources and how to look for information about it',
-      'Recently graduated from a web development bootcamp at Ironhack and a Network Administration Course at ITA',
-      'Specialized in MERN stack applications.',
+      'Learnt everything that I could from different sources and how to look for information about it',
+      'Recently graduated from a web development boot camp at Ironhack and a Network Administration Course at ITA',
+      'Currently in college taking software development.',
       'Expertise in JavaScript, React, Node.js, MongoDB, Git, Virtualization and Networking'
     ]
   },
