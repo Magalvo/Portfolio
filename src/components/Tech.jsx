@@ -12,7 +12,9 @@ const Tech = () => {
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        gap: '10px'
+        gap: '10px',
+        position: 'relative',
+        height: '100%' // Add height: 100% to ensure the container expands vertically
       }}
     >
       {technologies.map(technology => (

@@ -62,6 +62,7 @@ export const Projects = () => {
               className='background-image-center'
               src={colorSharp2}
               alt='right-light'
+              style={{ left: '0' }}
             />
             <img
               className='background-image-center'
