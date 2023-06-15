@@ -52,7 +52,7 @@ const Experience = () => {
           <b>Who is Magalvo?</b>
         </h1>
       </motion.div>
-      <div className='mt-20 flex flex-col'>
+      <div className='expMap'>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />

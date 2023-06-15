@@ -534,6 +534,12 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   z-index: -1;
 }
 
+/* @media (min-width: 576px) {
+  .background-image-center-right {
+    opacity: 0;
+  }
+} */
+
 /************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
@@ -890,6 +896,14 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   font-size: 14px;
   padding-left: 0.25rem;
   letter-spacing: 0.05em;
+}
+
+.expMap {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  align-items: center;
 }
 
 .canvas-loader {

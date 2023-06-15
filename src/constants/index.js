@@ -23,7 +23,7 @@ const experiences = [
     points: [
       "I've always been curious about how everything worked around me",
       'Started dismantling my consoles and electronics to see how the magic happened',
-      'Self-taught myself how to repair hardware devices (Phones/Consoles/Computers)',
+      'Self-taught myself how to repair hardware devices (Phones/Computers)',
       'I love everything about space and the vastness of his uncertainty'
     ]
   },
