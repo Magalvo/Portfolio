@@ -5,6 +5,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
 import { Alert } from 'react-bootstrap';
+import EarthContact from './canvas/EarthContact';
 
 export const Contact = () => {
   const form = useRef();
@@ -72,10 +73,13 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <img
+                /* <EarthContact
                   className={
                     isVisible ? 'animate__animated animate__zoomIn' : ''
                   }
+                /> */
+                <img
+                  className={isVisible ? 'animate_animated animate_zoomIn' : ''}
                   src={contactImg}
                   alt='Contact Us'
                 />

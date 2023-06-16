@@ -1,5 +1,4 @@
-import myImage from '../assets/img/profile.jpeg';
-import astronaut from '../assets/img/AstroLadoEdit.png';
+import myImage from '../assets/img/profile.png';
 import colorSharp from '../assets/img/color-sharp.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import Tech from './Tech';

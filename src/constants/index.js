@@ -12,6 +12,8 @@ import nodejs from '../assets/tech/nodejs.png';
 import reactjs from '../assets/tech/reactjs.png';
 import tailwind from '../assets/tech/tailwind.png';
 import threejs from '../assets/tech/threejs.svg';
+import linux from '../assets/tech/linux.png';
+import vm from '../assets/tech/vm.png';
 
 const experiences = [
   {
@@ -88,10 +90,6 @@ const technologies = [
   },
 
   {
-    name: 'Tailwind CSS',
-    icon: tailwind
-  },
-  {
     name: 'Node JS',
     icon: nodejs
   },
@@ -110,15 +108,15 @@ const technologies = [
   {
     name: 'figma',
     icon: figma
-  }
-  /*   {
+  },
+  {
     name: 'Linux',
     icon: linux
   },
   {
     name: 'VM',
-    icon: vms
-  } */
+    icon: vm
+  }
 ];
 
 export { experiences, technologies };
