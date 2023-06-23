@@ -1,6 +1,6 @@
 # Personal Portfolio Website in React Using ThreeJS
 
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="/assets/img/img/Screenshot 2023-06-23 at 11.40.02.png">
+<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="src/assets/img/img/Screenshot 2023-06-23 at 11.40.02.png">
 
 Built using:
 
