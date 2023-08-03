@@ -14,6 +14,7 @@ import tailwind from '../assets/tech/tailwind.png';
 import threejs from '../assets/tech/threejs.svg';
 import linux from '../assets/tech/linux.png';
 import vm from '../assets/tech/vm.png';
+import EarthContact from '../components/canvas/EarthContact';
 
 const experiences = [
   {
@@ -21,12 +22,12 @@ const experiences = [
     company_name: 'Curiosity',
     icon: bigbang,
     iconBg: '#383E56',
-    date: 'August 2000',
+    date: "The Beginning ['Sic Parvis Magna']",
     points: [
-      "I've always been curious about how everything worked around me",
-      'Started dismantling my consoles and electronics to see how the magic happened',
-      'Self-taught myself how to repair hardware devices (Phones/Computers)',
-      'I love everything about space and the vastness of his uncertainty'
+      'Inherently driven by curiosity, I have continuously sought to understand the inner workings of everything in my surroundings.',
+      'Embarked on a journey of exploration by disassembling consoles and electronics, delving into the realm of their intricate mechanisms.',
+      'Acquired self-taught expertise in hardware device repairs, encompassing both phones and computers.',
+      'Infatuated with the enigmatic nature of space and its boundless expanse, I hold a deep appreciation for all aspects related to it.'
     ]
   },
   {
@@ -36,10 +37,10 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: 'Present',
     points: [
-      'Learnt everything that I could from different sources and how to look for information about it',
-      'Recently graduated from a web development boot camp at Ironhack and a Network Administration Course at ITA',
-      'Currently in college taking software development.',
-      'Expertise in JavaScript, React, Node.js, MongoDB, Git, VMs, Networking & Linux'
+      'Eagerly absorbed knowledge from diverse sources and developed proficient information-seeking skills.',
+      'Recently completed a web development boot camp at Ironhack and a Network Administration Course at ITA, actively expanding my skill set.',
+      'Currently pursuing a software development program in college, further enhancing my expertise.',
+      'Possess expertise in JavaScript, React, Node.js, MongoDB, Git, virtual machines, networking, and Linux.'
     ]
   },
   {
@@ -47,12 +48,12 @@ const experiences = [
     company_name: 'Skills & Background',
     icon: book,
     iconBg: '#383E56',
-    date: 'Jan 2018 - Present',
+    date: '([...past, present])',
     points: [
-      'Strong foundation in both front-end and back-end development with real world projects',
-      'Pair-Programing Skills and the ability and the eager to learn from others. [Never be the Smartest Person in the room]',
-      'Retail experience provided valuable skills in communication, organization, and customer service.',
-      'Able to build user-friendly applications that meet client and end-user needs, having 2+ years of experience with no-code programing [Wordpress]'
+      'Possessing a solid grasp of both front-end and back-end development through hands-on experience with real-world projects.',
+      'Proficient in pair-programming, embracing the opportunity to learn from others and never shying away from being the least knowledgeable person in the room.',
+      'Acquired valuable skills in communication, organization, and customer service through prior retail experience.',
+      'Capable of constructing user-friendly applications that effectively cater to the requirements of clients and end-users, backed by over 2 years of experience in no-code programming, specifically with WordPress.'
     ]
   },
   {
@@ -62,10 +63,10 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: '([...present, future])',
     points: [
-      'Always learning something new about technology, about space, about everything...',
-      "Constantly trying to exceed myself as I'm always aiming to surpass my given objectives.",
-      'Aiming to use the benefits of technology to build a better and united world',
-      'From here and beyond THE SKY WAS NEVER THE LIMIT...'
+      'Cultivating a perpetual desire for knowledge in the realms of technology, space, and various other subjects.',
+      'Perpetually pushing my boundaries and striving to surpass predetermined goals.',
+      'Utilizing the advantages of technology to foster a more unified and improved world.',
+      " 'From this point forward, the sky has no limits to what can be achieved.' "
     ]
   }
 ];

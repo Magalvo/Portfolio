@@ -11,6 +11,7 @@ import colorSharp2 from '../assets/img/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import colorSharp from '../assets/img/color-sharp.png';
+import comingSoon from '../assets/img/coming soon.png';
 
 export const Projects = () => {
   const projects = [
@@ -61,8 +62,22 @@ export const Projects = () => {
     {
       title: 'Gymify',
       type: 'all',
-      description: 'Your Fitnes App with Thousands of Diferent Exercises',
+      description: 'Your Fitness App with Thousands of Different Exercises',
       imgUrl: projImg7,
+      link: 'https://gymify-fitness.netlify.app/'
+    },
+    {
+      title: 'Coming Soon',
+      type: 'all',
+      description: 'A New Idea Is Coming',
+      imgUrl: comingSoon,
+      link: 'https://gymify-fitness.netlify.app/'
+    },
+    {
+      title: 'Coming Soon',
+      type: 'all ',
+      description: 'A New Idea Is Coming',
+      imgUrl: comingSoon,
       link: 'https://gymify-fitness.netlify.app/'
     }
   ];
