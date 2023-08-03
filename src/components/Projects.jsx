@@ -57,7 +57,7 @@ export const Projects = () => {
       description:
         'A non-profit organization that boosts the adoption of sheltered animals',
       imgUrl: projImg6,
-      link: 'https://pic4paws.com'
+      link: 'https://pic4paws.netlify.app'
     },
     {
       title: 'Gymify',
@@ -71,14 +71,14 @@ export const Projects = () => {
       type: 'all',
       description: 'A New Idea Is Coming',
       imgUrl: comingSoon,
-      link: 'https://gymify-fitness.netlify.app/'
+      link: '#'
     },
     {
       title: 'Coming Soon',
       type: 'all ',
       description: 'A New Idea Is Coming',
       imgUrl: comingSoon,
-      link: 'https://gymify-fitness.netlify.app/'
+      link: '#'
     }
   ];
 

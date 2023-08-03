@@ -1,14 +1,13 @@
-# Personal Portfolio Website in React
+# Personal Portfolio Website in React Using ThreeJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="">
+<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="src/assets/img/img/Screenshot 2023-06-23 at 11.40.02.png">
 
 Built using:
 
 - Front-end library: React
-- CSS framework: React-bootstrap
+- CSS framework: React-bootstrap / Tailwind CSS
 - CSS animations library: Animate.css
+- Others : Three JS
 
 In the /personal-portfolio, you can run:
 

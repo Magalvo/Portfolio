@@ -12,15 +12,15 @@ const Tech = () => {
         flexDirection: 'row',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        gap: '50px',
+        gap: '10px',
         position: 'relative',
-        height: '100%',
-        width: '100%' // Add height: 100% to ensure the container expands vertically
+        height: '100%'
+        //width: '100%' // Add height: 100% to ensure the container expands vertically
       }}
     >
       {technologies.map(technology => (
         <div
-          style={{ width: '150px', height: 'auto', marginTop: '100px' }}
+          style={{ width: '100px', height: 'auto', marginTop: '100px' }} //
           key={technology.name}
         >
           <BallCanvas icon={technology.icon} />

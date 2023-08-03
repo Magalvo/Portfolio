@@ -16,10 +16,17 @@ const Ball = ({ icon }) => {
   const { scene } = useGLTF('/Planet6.gltf');
 
   return (
+    /*  <Float speed={1.75} rotationIntensity={2} floatIntensity={2}>
+      <ambientLight intensity={0.5} color='#cc44ea' />
+      <directionalLight position={[0, 0, 0.05]} intensity={1} color='#7B208E' /> */
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={1} color='#A262FF' />
       {/* color='#cc44ea' */}
-      <directionalLight position={[0, 0, 0.05]} intensity={1} color='#5F20AF' />
+      <directionalLight
+        position={[0, 0, 0.05]}
+        intensity={0.5}
+        color='#5F20AF'
+      />
       {/* color='#9f277e' */}
       <group>
         {/* Render the 3D object */}
@@ -34,13 +41,13 @@ const Ball = ({ icon }) => {
         <group position={[0, 0, 5.2]}>
           {/* 5.2 => Default Value (Model 6 && 8)  8.2 Model 11*/}
           <mesh castShadow receiveShadow scale={1.5}>
-            <planeGeometry args={[2, 2]} />
+            <planeGeometry args={[2.5, 2.5]} />
             <meshBasicMaterial map={decal} transparent opacity={1} />
           </mesh>
         </group>
         <group position={[0, 0, -5.2]}>
           <mesh castShadow receiveShadow scale={1.5} rotation={[0, Math.PI, 0]}>
-            <planeGeometry args={[2, 2]} />
+            <planeGeometry args={[2.5, 2.5]} />
             <meshBasicMaterial map={decal} transparent opacity={1} />
           </mesh>
         </group>
@@ -85,7 +92,7 @@ const BallCanvas = ({ icon }) => {
           fov: 100,
           near: 0.1,
           far: 250,
-          position: [-4, 0, 6]
+          position: [-4, 0, 8]
         }}
       >
         {' '}
