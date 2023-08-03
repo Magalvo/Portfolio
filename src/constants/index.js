@@ -14,6 +14,8 @@ import tailwind from '../assets/tech/tailwind.png';
 import threejs from '../assets/tech/threejs.svg';
 import linux from '../assets/tech/linux.png';
 import vm from '../assets/tech/vm.png';
+import redux from '../assets/tech/redux.png';
+import vite from '../assets/tech/vite.svg';
 import EarthContact from '../components/canvas/EarthContact';
 
 const experiences = [
@@ -72,14 +74,18 @@ const experiences = [
 ];
 
 const technologies = [
-  {
+  /*  {
     name: 'HTML 5',
     icon: html
-  },
+  }, */
   {
+    name: 'Vite',
+    icon: vite
+  },
+  /*  {
     name: 'CSS 3',
     icon: css
-  },
+  }, */
   {
     name: 'JavaScript',
     icon: javascript
@@ -89,7 +95,10 @@ const technologies = [
     name: 'React JS',
     icon: reactjs
   },
-
+  {
+    name: 'Redux',
+    icon: redux
+  },
   {
     name: 'Node JS',
     icon: nodejs

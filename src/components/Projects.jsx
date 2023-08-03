@@ -25,7 +25,8 @@ export const Projects = () => {
     {
       title: 'Spread Tax',
       type: 'all',
-      description: 'Accounting Platform for Accountants & Companies',
+      description:
+        ' CRUD Web Application || Accounting Platform for Accountants & Companies',
       imgUrl: projImg5,
       link: 'https://busy-pear-catfish-sari.cyclic.app/'
     },
@@ -55,14 +56,15 @@ export const Projects = () => {
       title: 'Pic 4 Paws',
       type: 'all',
       description:
-        'A non-profit organization that boosts the adoption of sheltered animals',
+        'MERN Stack + Redux Web Application || A non-profit organization that promotes the adoption of sheltered animals ',
       imgUrl: projImg6,
       link: 'https://pic4paws.netlify.app'
     },
     {
       title: 'Gymify',
       type: 'all',
-      description: 'Your Fitness App with Thousands of Different Exercises',
+      description:
+        'Web Application Featuring a RESTful API || Your Fitness App with Thousands of Different Exercises',
       imgUrl: projImg7,
       link: 'https://gymify-fitness.netlify.app/'
     },

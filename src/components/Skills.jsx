@@ -33,14 +33,14 @@ export const Skills = () => {
 
   const skills = [
     'JavaScript ES6',
+    'Node.js',
+    'React.js',
+    'Redux',
     'MongoDB',
     'Express.js',
-    'React.js',
-    'Node.js',
     'Linux',
     'Git',
-    'Virtualization',
-    'DOM'
+    'Virtualization'
   ];
 
   return (
