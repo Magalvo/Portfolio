@@ -10,6 +10,9 @@ import { Footer } from './components/Footer';
 import { AboutMe } from './components/AboutMe';
 import StarsCanvas from './components/canvas/Stars';
 import Tech from './components/Tech';
+import EarthContact from './components/canvas/EarthContact';
+import Planet from './components/canvas/Planet';
+import EarthFlames from './components/canvas/EarthFlames';
 
 function App() {
   return (
@@ -26,6 +29,8 @@ function App() {
       </div>
 
       <Skills />
+      {/*       <EarthContact /> */}
+      <EarthFlames />
 
       <div style={{ position: 'relative', zIndex: '0' }}>
         <Projects />

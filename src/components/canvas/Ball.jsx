@@ -5,52 +5,64 @@ import {
   Float,
   OrbitControls,
   Preload,
-  useTexture
+  useTexture,
+  useGLTF
 } from '@react-three/drei';
-import { MeshBasicMaterial, DoubleSide } from 'three';
-
+import { DoubleSide, MeshBasicMaterial, PlaneGeometry } from 'three';
 import CanvasLoader from '../Loader';
 
-const Ball = props => {
-  const [decal] = useTexture([props.imgUrl]);
+const Ball = ({ icon }) => {
+  const [decal] = useTexture([icon]);
+  const { scene } = useGLTF('/Planet6.gltf');
 
   return (
-    <Float speed={3.75} rotationIntensity={3} floatIntensity={3}>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[0, 0, 0.05]} intensity={1} />
+    <Float speed={1.75} rotationIntensity={2} floatIntensity={2}>
+      <ambientLight intensity={0.5} color='#cc44ea' />
+      <directionalLight position={[0, 0, 0.05]} intensity={1} color='#7B208E' />
 
       <group>
-        {/* Front Face */}
-        <mesh castShadow receiveShadow scale={2.75}>
-          <icosahedronGeometry args={[1, 1]} />
-          <meshStandardMaterial
-            color='#a13682'
-            polygonOffset
-            polygonOffsetFactor={-5}
-            flatShading
-          />
-          <Decal
-            position={[0, 0, 1]}
-            rotation={[2 * Math.PI, 0, 6.25]}
-            scale={1}
-            map={decal}
-            flatShading
-          />
-        </mesh>
+        {/* Render the 3D object */}
+        <mesh
+          castShadow
+          receiveShadow
+          scale={2.75}
+          geometry={scene.children[0].geometry}
+          material={scene.children[0].material}
+        />
 
-        {/* Back Face */}
-        <mesh castShadow receiveShadow scale={2.75} rotation={[0, Math.PI, 0]}>
-          <icosahedronGeometry args={[1, 1]} />
-          <meshBasicMaterial />
-          <Decal
-            position={[0, 0, 1]}
-            rotation={[2 * Math.PI, 0, 6.25]}
-            scale={1}
-            map={decal}
-            flatShading
-            materialOptions={{ side: DoubleSide }}
-          />
-        </mesh>
+        {/* Add icons to planes */}
+        <group position={[0, 0, 5.2]}>
+          <mesh castShadow receiveShadow scale={1.5} rotation={[0, Math.PI, 0]}>
+            <planeGeometry args={[2, 2]} />
+            <meshBasicMaterial
+              map={decal}
+              side={DoubleSide}
+              transparent
+              opacity={0.5}
+            />
+          </mesh>
+        </group>
+
+        <group position={[0, 0, 5.2]}>
+          <mesh castShadow receiveShadow scale={1.5} rotation={[Math.PI, 0, 0]}>
+            <planeGeometry args={[2, 2]} />
+            <meshBasicMaterial
+              map={decal}
+              side={DoubleSide}
+              transparent
+              opacity={0.5}
+            />
+          </mesh>
+          <mesh castShadow receiveShadow scale={1.5} rotation={[Math.PI, 0, 0]}>
+            <planeGeometry args={[2, 2]} />
+            <meshBasicMaterial
+              map={decal}
+              side={DoubleSide}
+              transparent
+              opacity={0.5}
+            />
+          </mesh>
+        </group>
       </group>
     </Float>
   );
@@ -58,18 +70,28 @@ const Ball = props => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas
-      frameloop='demand'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} autoRotate />
-        <Ball imgUrl={icon} />
-      </Suspense>
+    <div style={{ height: 'auto', width: 'auto' }}>
+      <Canvas
+        style={{ height: 'auto', width: '100%' }}
+        shadows
+        frameloop='demand'
+        dpr={[1, 2]}
+        gl={{ preserveDrawingBuffer: true }}
+        camera={{
+          fov: 100,
+          near: 0.1,
+          far: 250,
+          position: [-4, 3, 6]
+        }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls enableZoom={false} autoRotate />
+          <Ball icon={icon} />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
+    </div>
   );
 };
 

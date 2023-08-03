@@ -49,7 +49,7 @@ export const Projects = () => {
       description:
         'A non-profit organization that boosts the adoption of sheltered animals',
       imgUrl: projImg6,
-      link: 'https://pic4paws.com'
+      link: 'https://pic4paws.netlify.app'
     }
   ];
 

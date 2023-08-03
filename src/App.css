@@ -902,7 +902,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  text-align: justify;
+
   align-items: center;
 }
 
