@@ -16,9 +16,12 @@ const Ball = ({ icon }) => {
   const { scene } = useGLTF('/Planet6.gltf');
 
   return (
-    <Float speed={1.75} rotationIntensity={2} floatIntensity={2}>
+    /*  <Float speed={1.75} rotationIntensity={2} floatIntensity={2}>
       <ambientLight intensity={0.5} color='#cc44ea' />
-      <directionalLight position={[0, 0, 0.05]} intensity={1} color='#7B208E' />
+      <directionalLight position={[0, 0, 0.05]} intensity={1} color='#7B208E' /> */
+    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[0, 0, 0.05]} intensity={1} />
 
       <group>
         {/* Render the 3D object */}

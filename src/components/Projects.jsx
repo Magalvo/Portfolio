@@ -6,6 +6,7 @@ import projImg3 from '../assets/img/espfoto.png';
 import projImg4 from '../assets/img/GetInAtlas Today.png';
 import projImg5 from '../assets/img/Handlebars.png';
 import projImg6 from '../assets/img/Pic4Paws.png';
+import projImg7 from '../assets/img/gymifyBan.png';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -15,18 +16,21 @@ export const Projects = () => {
   const projects = [
     {
       title: 'Verse Fight',
+      type: 'all',
       description: 'Canvas HTML Game',
       imgUrl: projImg1,
       link: 'https://verse-fight.netlify.app/'
     },
     {
       title: 'Spread Tax',
+      type: 'all',
       description: 'Accounting Platform for Accountants & Companies',
       imgUrl: projImg5,
       link: 'https://busy-pear-catfish-sari.cyclic.app/'
     },
     {
       title: 'ESPPortal',
+      type: 'arduino',
       description:
         'An ESP8266 Arduino project to draw attention to the many dangers of the internet',
       imgUrl: projImg3,
@@ -34,22 +38,32 @@ export const Projects = () => {
     },
     {
       title: 'Get In Atlas',
+      type: 'all',
       description: 'A social network for travel enthusiasts.',
       imgUrl: projImg4,
       link: 'https://getinatlas.com'
     },
     {
       title: 'Megatech',
+      type: 'nocode',
       description: 'Apple Repair Company',
       imgUrl: projImg2,
       link: 'https://megatech.pt/'
     },
     {
       title: 'Pic 4 Paws',
+      type: 'all',
       description:
         'A non-profit organization that boosts the adoption of sheltered animals',
       imgUrl: projImg6,
       link: 'https://pic4paws.netlify.app'
+    },
+    {
+      title: 'Gymify',
+      type: 'all',
+      description: 'Your Fitnes App with Thousands of Diferent Exercises',
+      imgUrl: projImg7,
+      link: 'https://gymify-fitness.netlify.app/'
     }
   ];
 
@@ -86,13 +100,13 @@ export const Projects = () => {
                       id='pills-tab'
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey='first'>Projects</Nav.Link>
+                        <Nav.Link eventKey='first'>All Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey='second'>Projects</Nav.Link>
+                        <Nav.Link eventKey='second'>Arduino Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey='third'>Projects</Nav.Link>
+                        <Nav.Link eventKey='third'>No-Code Projects</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -110,16 +124,20 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey='second'>
                         <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
+                          {projects
+                            .filter(project => project.type === 'arduino') // Replace "show" with your condition
+                            .map((project, index) => (
+                              <ProjectCard key={index} {...project} />
+                            ))}
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey='third'>
                         <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
+                          {projects
+                            .filter(project => project.type === 'nocode') // Replace "show" with your condition
+                            .map((project, index) => (
+                              <ProjectCard key={index} {...project} />
+                            ))}
                         </Row>
                       </Tab.Pane>
                     </Tab.Content>
