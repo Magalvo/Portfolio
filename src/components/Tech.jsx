@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 
-import BallCanvas from './canvas/Ball';
 import { SectionWrapper } from '../hoc/index';
 import { technologies } from '../constants/index';
+import { useDeferredCanvas } from '../utils/threePerformance';
+
+const BallCanvas = lazy(() => import('./canvas/Ball'));
 
 const Tech = () => {
+  const [containerRef, shouldRender] = useDeferredCanvas('500px');
+
   return (
     <div
+      ref={containerRef}
       style={{
         display: 'flex',
         flexDirection: 'row',
@@ -20,10 +25,14 @@ const Tech = () => {
     >
       {technologies.map(technology => (
         <div
-          style={{ width: '100px', height: 'auto', marginTop: '100px' }} //
+          style={{ width: '100px', height: '100px', marginTop: '100px' }}
           key={technology.name}
         >
-          <BallCanvas icon={technology.icon} />
+          {shouldRender && (
+            <Suspense fallback={null}>
+              <BallCanvas icon={technology.icon} />
+            </Suspense>
+          )}
         </div>
       ))}
     </div>

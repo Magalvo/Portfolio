@@ -1,8 +1,12 @@
 import React, { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import { OrbitControls, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
+import {
+  useDeferredCanvas,
+  useThreePerformance
+} from '../../utils/threePerformance';
 
 const Earth = () => {
   const earth = useGLTF('/planet/scene.gltf');
@@ -13,33 +17,35 @@ const Earth = () => {
 };
 
 const EarthContact = () => {
-  return (
-    <div style={{ height: '100vh' }}>
-      <Canvas
-        style={{ height: '100%' }}
-        shadows
-        frameloop='demand'
-        dpr={[1, 2]}
-        gl={{ preserveDrawingBuffer: true }}
-        camera={{
-          fov: 45,
-          near: 0.1,
-          far: 200,
-          position: [-4, 3, 6]
-        }}
-      >
-        <Suspense fallback={<CanvasLoader />}>
-          <OrbitControls
-            autoRotate
-            enableZoom={false}
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 2}
-          />
-          <Earth />
+  const [containerRef, shouldRender] = useDeferredCanvas();
+  const { autoRotate, dpr, gl } = useThreePerformance();
 
-          <Preload all />
-        </Suspense>
-      </Canvas>
+  return (
+    <div ref={containerRef} style={{ height: '100vh' }}>
+      {shouldRender && (
+        <Canvas
+          style={{ height: '100%' }}
+          frameloop={autoRotate ? 'always' : 'demand'}
+          dpr={dpr}
+          gl={gl}
+          camera={{
+            fov: 45,
+            near: 0.1,
+            far: 200,
+            position: [-4, 3, 6]
+          }}
+        >
+          <Suspense fallback={<CanvasLoader />}>
+            <OrbitControls
+              autoRotate={autoRotate}
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2}
+              minPolarAngle={Math.PI / 2}
+            />
+            <Earth />
+          </Suspense>
+        </Canvas>
+      )}
     </div>
   );
 };

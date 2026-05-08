@@ -32,15 +32,16 @@ export const Skills = () => {
   };
 
   const skills = [
-    'JavaScript ES6',
-    'Node.js',
-    'React.js',
-    'Redux',
-    'MongoDB',
-    'Express.js',
-    'Linux',
-    'Git',
-    'Virtualization'
+    'C | C++',
+    'C# .NET',
+    'PostgreSQL',
+    'React',
+    'Docker',
+    'Kubernetes',
+    'MERN Stack',
+    'Flutter',
+    'Web Design',
+    'Mobile App Development',
   ];
 
   return (

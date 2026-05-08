@@ -5,7 +5,6 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import emailjs from '@emailjs/browser';
 import { Alert } from 'react-bootstrap';
-import EarthContact from './canvas/EarthContact';
 
 export const Contact = () => {
   const form = useRef();

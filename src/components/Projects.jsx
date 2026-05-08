@@ -7,6 +7,12 @@ import projImg4 from '../assets/img/GetInAtlas Today.png';
 import projImg5 from '../assets/img/Handlebars.png';
 import projImg6 from '../assets/img/Pic4Paws.png';
 import projImg7 from '../assets/img/gymifyBan.png';
+import projImg8 from '../assets/img/Minishell.png';
+import projImg9 from '../assets/img/FantasticMrFox.png';
+import projImg10 from '../assets/img/Cub3d.png';
+import projImg11 from '../assets/img/Philosophers.png';
+import projImg12 from '../assets/img/PushSwap.png';
+import projImg13 from '../assets/img/LifeLink.jpg';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -23,34 +29,20 @@ export const Projects = () => {
       link: 'https://verse-fight.netlify.app/'
     },
     {
+      title: 'LifeLink',
+      type: 'all',
+      description:
+        'Connecting Rescuers and Those in Need',
+      imgUrl: projImg13,
+      link: 'https://lifelink.pt/'
+    },
+    {
       title: 'Spread Tax',
       type: 'all',
       description:
         ' CRUD Web Application || Accounting Platform for Accountants & Companies',
       imgUrl: projImg5,
       link: 'https://busy-pear-catfish-sari.cyclic.app/'
-    },
-    {
-      title: 'ESPPortal',
-      type: 'arduino',
-      description:
-        'An ESP8266 Arduino project to draw attention to the many dangers of the internet',
-      imgUrl: projImg3,
-      link: 'https://github.com/Magalvo/ESPBug'
-    },
-    {
-      title: 'Get In Atlas',
-      type: 'all',
-      description: 'A social network for travel enthusiasts.',
-      imgUrl: projImg4,
-      link: 'https://getinatlas.com'
-    },
-    {
-      title: 'Megatech',
-      type: 'nocode',
-      description: 'Apple Repair Company',
-      imgUrl: projImg2,
-      link: 'https://megatech.pt/'
     },
     {
       title: 'Pic 4 Paws',
@@ -61,6 +53,13 @@ export const Projects = () => {
       link: 'https://pic4paws.netlify.app'
     },
     {
+      title: 'Get In Atlas',
+      type: 'all',
+      description: 'A social network for travel enthusiasts.',
+      imgUrl: projImg4,
+      link: 'https://getinatlas.com'
+    },
+    {
       title: 'Gymify',
       type: 'all',
       description:
@@ -69,19 +68,48 @@ export const Projects = () => {
       link: 'https://gymify-fitness.netlify.app/'
     },
     {
-      title: 'Coming Soon',
+      title: 'Minishell',
       type: 'all',
       description: 'A New Idea Is Coming',
-      imgUrl: comingSoon,
-      link: '#'
+      imgUrl: projImg8,
+      link: 'https://github.com/Magalvo/Minishell'
     },
     {
-      title: 'Coming Soon',
+      title: 'Fantastic Mr.Fox',
+      type: 'all ',
+      description: 'Mini Game using C and MiniLibX Library',
+      imgUrl: projImg9,
+      link: 'https://github.com/Magalvo/so_long'
+    },
+    {
+      title: 'Cub3d',
       type: 'all ',
       description: 'A New Idea Is Coming',
-      imgUrl: comingSoon,
-      link: '#'
-    }
+      imgUrl: projImg10,
+      link: 'https://github.com/diegosou4/cub3D'
+    },
+    {
+      title: 'Philosophers',
+      type: 'all ',
+      description: 'The Dining Philosophers Problem | Using Threads',
+      imgUrl: projImg11,
+      link: 'https://github.com/Magalvo/Philosophers'
+    },
+    {
+      title: 'PushSwap',
+      type: 'all',
+      description: 'Sorting Algorithm Program',
+      imgUrl: projImg12,
+      link: 'https://github.com/Magalvo/light_speed_sort'
+    },
+    {
+      title: 'ESPPortal',
+      type: 'arduino',
+      description:
+        'An ESP8266 Arduino project to draw attention to the many dangers of the internet',
+      imgUrl: projImg3,
+      link: 'https://github.com/Magalvo/ESPBug'
+    },
   ];
 
   return (
@@ -117,7 +145,7 @@ export const Projects = () => {
                       id='pills-tab'
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey='first'>All Projects</Nav.Link>
+                        <Nav.Link eventKey='first'>Main Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey='second'>Arduino Projects</Nav.Link>

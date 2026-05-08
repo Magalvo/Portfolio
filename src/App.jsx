@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from './components/NavBar';
@@ -9,10 +8,6 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { AboutMe } from './components/AboutMe';
 import StarsCanvas from './components/canvas/Stars';
-import Tech from './components/Tech';
-import EarthContact from './components/canvas/EarthContact';
-import Planet from './components/canvas/Planet';
-import EarthFlames from './components/canvas/EarthFlames';
 
 function App() {
   return (

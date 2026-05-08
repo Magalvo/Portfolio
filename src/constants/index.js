@@ -16,7 +16,6 @@ import linux from '../assets/tech/linux.png';
 import vm from '../assets/tech/vm.png';
 import redux from '../assets/tech/redux.png';
 import vite from '../assets/tech/vite.svg';
-import EarthContact from '../components/canvas/EarthContact';
 
 const experiences = [
   {
