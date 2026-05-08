@@ -96,13 +96,6 @@ export const NavBar = () => {
                 >
                   <img src={navIcon2} alt="" />
                 </a>
-                <a
-                  href="https://twitter.com/di_ogo_s"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img src={navIcon3} alt="" />
-                </a>
               </div>
               <HashLink to="#connect">
                 <button className="vvd">
