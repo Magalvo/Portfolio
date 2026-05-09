@@ -19,35 +19,35 @@ const Ball = ({ icon, reducedMotion }) => {
     >
       <ambientLight intensity={1} color='#A262FF' />
       <directionalLight
-        position={[1, 0, 0.05]}
+        position={[0, 0, 0.05]}
         intensity={1}
         color='#9a7bc4'
       />
       <group>
         <mesh
-          scale={2.75}
+          scale={3.5}
           geometry={scene.children[0].geometry}
           material={scene.children[0].material}
         />
-        <group position={[0, 0, 5.2]}>
-          <mesh scale={1.5}>
+        <group position={[0, 0, 6.6]}>
+          <mesh scale={2}>
             <planeGeometry args={[2.5, 2.5]} />
             <meshBasicMaterial map={decal} transparent opacity={1} />
           </mesh>
         </group>
-        <group position={[0, 0, -5.2]}>
+        <group position={[0, 0, -6.6]}>
           <mesh scale={1.5} rotation={[0, Math.PI, 0]}>
             <planeGeometry args={[2.5, 2.5]} />
             <meshBasicMaterial map={decal} transparent opacity={1} />
           </mesh>
         </group>
-        <group position={[5.2, 0, 0]}>
+        <group position={[6.6, 0, 0]}>
           <mesh scale={1.5} rotation={[0, Math.PI / 2, 0]}>
             <planeGeometry args={[2, 2]} />
             <meshBasicMaterial map={decal} transparent opacity={1} />
           </mesh>
         </group>
-        <group position={[-5.2, 0, 0]}>
+        <group position={[-6.6, 0, 0]}>
           <mesh scale={1.5} rotation={[0, -Math.PI / 2, 0]}>
             <planeGeometry args={[2, 2]} />
             <meshBasicMaterial map={decal} transparent opacity={1} />
