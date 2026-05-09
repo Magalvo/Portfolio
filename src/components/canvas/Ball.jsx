@@ -30,7 +30,7 @@ const Ball = ({ icon, reducedMotion }) => {
           material={scene.children[0].material}
         />
         <group position={[0, 0, 6.6]}>
-          <mesh scale={2}>
+          <mesh scale={1.5}>
             <planeGeometry args={[2.5, 2.5]} />
             <meshBasicMaterial map={decal} transparent opacity={1} />
           </mesh>
