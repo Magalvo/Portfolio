@@ -19,9 +19,9 @@ const Ball = ({ icon, reducedMotion }) => {
     >
       <ambientLight intensity={1} color='#A262FF' />
       <directionalLight
-        position={[0, 0, 0.05]}
-        intensity={0.5}
-        color='#5F20AF'
+        position={[1, 0, 0.05]}
+        intensity={1}
+        color='#9a7bc4'
       />
       <group>
         <mesh

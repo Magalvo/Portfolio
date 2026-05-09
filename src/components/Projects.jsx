@@ -23,14 +23,14 @@ export const Projects = () => {
   const projects = [
     {
       title: 'Verse Fight',
-      type: 'all',
+      type: 'webapps',
       description: 'Canvas HTML Game',
       imgUrl: projImg1,
       link: 'https://verse-fight.netlify.app/'
     },
     {
       title: 'LifeLink',
-      type: 'all',
+      type: 'webapps',
       description:
         'Connecting Rescuers and Those in Need',
       imgUrl: projImg13,
@@ -38,15 +38,15 @@ export const Projects = () => {
     },
     {
       title: 'Spread Tax',
-      type: 'all',
+      type: 'webapps',
       description:
         ' CRUD Web Application || Accounting Platform for Accountants & Companies',
       imgUrl: projImg5,
-      link: 'https://busy-pear-catfish-sari.cyclic.app/'
+      link: 'https://spreadtaxv2.onrender.com/'
     },
     {
       title: 'Pic 4 Paws',
-      type: 'all',
+      type: 'webapps',
       description:
         'MERN Stack + Redux Web Application || A non-profit organization that promotes the adoption of sheltered animals ',
       imgUrl: projImg6,
@@ -54,14 +54,14 @@ export const Projects = () => {
     },
     {
       title: 'Get In Atlas',
-      type: 'all',
+      type: 'webapps',
       description: 'A social network for travel enthusiasts.',
       imgUrl: projImg4,
       link: 'https://getinatlas.com'
     },
     {
       title: 'Gymify',
-      type: 'all',
+      type: 'webapps',
       description:
         'Web Application Featuring a RESTful API || Your Fitness App with Thousands of Different Exercises',
       imgUrl: projImg7,
@@ -69,35 +69,35 @@ export const Projects = () => {
     },
     {
       title: 'Minishell',
-      type: 'all',
+      type: 'c',
       description: 'A New Idea Is Coming',
       imgUrl: projImg8,
       link: 'https://github.com/Magalvo/Minishell'
     },
     {
       title: 'Fantastic Mr.Fox',
-      type: 'all ',
+      type: 'c',
       description: 'Mini Game using C and MiniLibX Library',
       imgUrl: projImg9,
       link: 'https://github.com/Magalvo/so_long'
     },
     {
       title: 'Cub3d',
-      type: 'all ',
+      type: 'c',
       description: 'A New Idea Is Coming',
       imgUrl: projImg10,
       link: 'https://github.com/diegosou4/cub3D'
     },
     {
       title: 'Philosophers',
-      type: 'all ',
+      type: 'c',
       description: 'The Dining Philosophers Problem | Using Threads',
       imgUrl: projImg11,
       link: 'https://github.com/Magalvo/Philosophers'
     },
     {
       title: 'PushSwap',
-      type: 'all',
+      type: 'c',
       description: 'Sorting Algorithm Program',
       imgUrl: projImg12,
       link: 'https://github.com/Magalvo/light_speed_sort'
@@ -148,10 +148,10 @@ export const Projects = () => {
                         <Nav.Link eventKey='first'>Main Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey='second'>Arduino Projects</Nav.Link>
+                        <Nav.Link eventKey='second'>Web Apps</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey='third'>No-Code Projects</Nav.Link>
+                        <Nav.Link eventKey='third'>C | C++</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -170,7 +170,7 @@ export const Projects = () => {
                       <Tab.Pane eventKey='second'>
                         <Row>
                           {projects
-                            .filter(project => project.type === 'arduino') // Replace "show" with your condition
+                            .filter(project => project.type === 'webapps') // Replace "show" with your condition
                             .map((project, index) => (
                               <ProjectCard key={index} {...project} />
                             ))}
@@ -179,7 +179,7 @@ export const Projects = () => {
                       <Tab.Pane eventKey='third'>
                         <Row>
                           {projects
-                            .filter(project => project.type === 'nocode') // Replace "show" with your condition
+                            .filter(project => project.type === 'c') // Replace "show" with your condition
                             .map((project, index) => (
                               <ProjectCard key={index} {...project} />
                             ))}

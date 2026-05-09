@@ -1,114 +1,121 @@
 import bigbang from '../assets/icons/bigbang.png';
-import book from '../assets/icons/book.png';
+import fortytwo from '../assets/icons/42.png'; // Suggested new icon
+import global from '../assets/icons/global.png'; // Suggested new icon for EU project
 import future from '../assets/icons/future.png';
-import evolution from '../assets/icons/evolution.png';
-import css from '../assets/tech/css.png';
-import figma from '../assets/tech/figma.png';
-import git from '../assets/tech/git.png';
-import html from '../assets/tech/html.png';
+// Tech imports
+import c from '../assets/tech/c.png';
+import cpp from '../assets/tech/cpp.png';
 import javascript from '../assets/tech/javascript.png';
-import mongodb from '../assets/tech/mongodb.png';
-import nodejs from '../assets/tech/nodejs.png';
 import reactjs from '../assets/tech/reactjs.png';
-import tailwind from '../assets/tech/tailwind.png';
-import threejs from '../assets/tech/threejs.svg';
+import nodejs from '../assets/tech/nodejs.png';
+import mongodb from '../assets/tech/mongodb.png';
+import git from '../assets/tech/git.png';
 import linux from '../assets/tech/linux.png';
-import vm from '../assets/tech/vm.png';
-import redux from '../assets/tech/redux.png';
-import vite from '../assets/tech/vite.svg';
+import docker from '../assets/tech/dockers.png'
+import kub from '../assets/tech/kub.png'
+import post from '../assets/tech/postgres.png'
+import figma from '../assets/tech/figma.png'
+import cs from '../assets/tech/cs.png'
 
 const experiences = [
   {
-    title: 'From the beginning of Time...',
-    company_name: 'Curiosity',
+    title: 'The Spark of Curiosity',
+    company_name: 'Origins',
     icon: bigbang,
     iconBg: '#383E56',
     date: "The Beginning ['Sic Parvis Magna']",
     points: [
-      'Inherently driven by curiosity, I have continuously sought to understand the inner workings of everything in my surroundings.',
-      'Embarked on a journey of exploration by disassembling consoles and electronics, delving into the realm of their intricate mechanisms.',
-      'Acquired self-taught expertise in hardware device repairs, encompassing both phones and computers.',
-      'Infatuated with the enigmatic nature of space and its boundless expanse, I hold a deep appreciation for all aspects related to it.'
+      'Inherently driven by curiosity, seeking to understand the inner workings of hardware and electronics.',
+      'Self-taught expertise in hardware repair, focusing on the intricate mechanisms of phones and computers.',
+      'Deeply inspired by the enigmatic nature of space and the boundless potential of technology.'
     ]
   },
   {
-    title: 'The Evolution of Times',
-    company_name: 'Education & Learning',
-    icon: evolution,
+    title: 'Algorithmic Genesis',
+    company_name: '42 Lisboa',
+    icon: fortytwo,
     iconBg: '#E6DEDD',
-    date: 'Present',
+    date: 'August 2023 - Present',
     points: [
-      'Eagerly absorbed knowledge from diverse sources and developed proficient information-seeking skills.',
-      'Recently completed a web development boot camp at Ironhack and a Network Administration Course at ITA, actively expanding my skill set.',
-      'Currently pursuing a software development program in college, further enhancing my expertise.',
-      'Possess expertise in JavaScript, React, Node.js, MongoDB, Git, virtual machines, networking, and Linux.'
+      'Immersed in an intensive Software Engineering program, mastering low-level programming with C and C++.',
+      'Developing complex systems and algorithms through a rigorous peer-to-peer learning methodology.',
+      'Solving intricate technical challenges while balancing deep-dive engineering with a collaborative mindset.'
     ]
   },
   {
-    title: 'The Doer',
-    company_name: 'Skills & Background',
-    icon: book,
+    title: 'The Sentinel (Student Supervisor)',
+    company_name: '42 Lisboa Mentorship',
+    icon: fortytwo,
     iconBg: '#383E56',
-    date: '([...past, present])',
+    date: 'February 2025 - April 2025',
     points: [
-      'Possessing a solid grasp of both front-end and back-end development through hands-on experience with real-world projects.',
-      'Proficient in pair-programming, embracing the opportunity to learn from others and never shying away from being the least knowledgeable person in the room.',
-      'Acquired valuable skills in communication, organization, and customer service through prior retail experience.',
-      'Capable of constructing user-friendly applications that effectively cater to the requirements of clients and end-users, backed by over 2 years of experience in no-code programming, specifically with WordPress.'
+      'Served as a Junior Lifeguard, supporting over 400 "Pisciners" through an intensive, month-long selection process.',
+      'Guided candidates through complex project instructions and debugging, fostering a culture of peer learning.',
+      'Strengthened leadership and interpersonal skills by encouraging persistence during highly demanding technical trials.'
+    ]
+  },
+  {
+    title: 'Global Synthesis (International Researcher)',
+    company_name: 'EU-Funded Project: STUDIES-DIG',
+    icon: global,
+    iconBg: '#E6DEDD',
+    date: 'March 2025 - April 2025',
+    points: [
+      'Conducted an international secondment in Sofia, Bulgaria, researching the digital transformation of higher education.',
+      'Analyzed socio-economic and cultural barriers to digital adoption through field visits and policy analysis.',
+      'Collaborated with an international team of stakeholders to draft comprehensive reports on institutional findings.'
     ]
   },
   {
     title: 'Proactive Evolution',
     company_name: 'The Bright Future...',
     icon: future,
-    iconBg: '#E6DEDD',
-    date: '([...present, future])',
+    iconBg: '#383E56',
+    date: 'Present & Beyond',
     points: [
-      'Cultivating a perpetual desire for knowledge in the realms of technology, space, and various other subjects.',
-      'Perpetually pushing my boundaries and striving to surpass predetermined goals.',
-      'Utilizing the advantages of technology to foster a more unified and improved world.',
+      'Cultivating a perpetual desire for knowledge in the realms of low-level engineering, digitalization, and space.',
+      'Pushing boundaries to bridge the gap between technical research and real-world implementation.',
       " 'From this point forward, the sky has no limits to what can be achieved.' "
     ]
   }
 ];
 
 const technologies = [
-  /*  {
-    name: 'HTML 5',
-    icon: html
-  }, */
   {
-    name: 'Vite',
-    icon: vite
+    name: 'C',
+    icon: c
   },
-  /*  {
-    name: 'CSS 3',
-    icon: css
-  }, */
   {
-    name: 'JavaScript',
-    icon: javascript
+    name: 'C++',
+    icon: cpp
   },
-
+  {
+    name: 'C# .NET',
+    icon: cs
+  },
+  {
+    name: 'Docker',
+    icon: docker
+  },
+  {
+    name: 'Kubernetes',
+    icon: kub
+  },
   {
     name: 'React JS',
     icon: reactjs
-  },
-  {
-    name: 'Redux',
-    icon: redux
   },
   {
     name: 'Node JS',
     icon: nodejs
   },
   {
-    name: 'MongoDB',
-    icon: mongodb
+    name: 'PostgreSQL',
+    icon: post
   },
   {
-    name: 'Three JS',
-    icon: threejs
+    name: 'Linux',
+    icon: linux
   },
   {
     name: 'git',
@@ -118,14 +125,6 @@ const technologies = [
     name: 'figma',
     icon: figma
   },
-  {
-    name: 'Linux',
-    icon: linux
-  },
-  {
-    name: 'VM',
-    icon: vm
-  }
 ];
 
 export { experiences, technologies };
